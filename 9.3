@@ -1,0 +1,16 @@
+file = open("sample.txt", "r")
+    content = file.read()
+    print(content)
+except FileNotFoundError:
+    print("Error: File not found!")
+finally:
+    print("Execution completed (finally block runs always).")
+
+Sample I/O
+(sample.txt contains: "Hello Python")
+
+Hello Python
+Execution completed (finally block runs always).
+
+Error: File not found!
+Execution completed (finally block runs always).
