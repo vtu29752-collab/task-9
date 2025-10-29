@@ -1,0 +1,13 @@
+    num = int(input("Enter a positive number: "))
+    if num < 0:
+        raise NegativeNumberError("Negative number entered!")
+    print("You entered:", num)
+except NegativeNumberError as e:
+    print("Error:", e)
+
+Sample I/O
+Enter a positive number: 15
+You entered: 15
+
+Enter a positive number: -8
+Error: Negative number entered!
